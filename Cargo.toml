@@ -11,7 +11,7 @@ crate-type = ["cdylib", "rlib"]
 default = ["console_error_panic_hook"]
 
 [dependencies]
-wasm-bindgen = "0.2"
+wasm-bindgen = { version = "0.2", features = ["nightly"] }
 
 # Crypto Libs
 ursa = { version = "0.3", default-features = false, features = ["portable"] }
